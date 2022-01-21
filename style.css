@@ -1,0 +1,163 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: url("./images/olivier-miche-OZACaaUskhg-unsplash.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: 'Poppins', sans-serif;
+}
+
+.container {
+  width: 500px;
+  text-align: center;
+  color: #fff;
+  -webkit-box-shadow: 0 0 50px 20px rgba(34, 60, 80, 0.26);
+          box-shadow: 0 0 50px 20px rgba(34, 60, 80, 0.26);
+  border-radius: 15px;
+}
+
+.image-container {
+  width: 200px;
+  height: 200px;
+  margin: 70px auto;
+}
+
+.image-container img {
+  width: inherit;
+  height: inherit;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50%;
+  -webkit-animation: imageRotate 10s linear infinite;
+          animation: imageRotate 10s linear infinite;
+  -webkit-animation-play-state: paused;
+          animation-play-state: paused;
+}
+
+.container.play img {
+  -webkit-animation-play-state: running;
+          animation-play-state: running;
+}
+
+@-webkit-keyframes imageRotate {
+  from {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes imageRotate {
+  from {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+.time {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 1.8rem;
+  font-size: 1.5em;
+}
+
+input[type="range"] {
+  -webkit-appearance: none;
+  width: 50%;
+  text-align: center;
+  height: 7px;
+  background: rgba(255, 255, 255, 0.6);
+  border-radius: 5px;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#1291d6), to(#1291d6));
+  background-image: linear-gradient(#1291d6, #1291d6);
+  background-repeat: no-repeat;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background: #1291d6;
+  -webkit-box-shadow: 0 0 2px 0 #555;
+          box-shadow: 0 0 2px 0 #555;
+  -webkit-transition: background .3s ease-in-out;
+  transition: background .3s ease-in-out;
+}
+
+form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.range-title {
+  margin: 0;
+  margin-right: 25px;
+  font-size: 1rem;
+  padding-left: 1.8rem;
+}
+
+.progress-container {
+  background-color: #fff;
+  width: 80%;
+  margin: 1rem auto;
+  height: 6px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.progress {
+  height: inherit;
+  background-color: #1291d6;
+  width: 40%;
+  border-radius: inherit;
+}
+
+.btn {
+  margin: 1rem 3rem;
+  border: none;
+  background-color: transparent;
+  color: #fff;
+  font-size: 1.5rem;
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+.btn:focus {
+  outline: none;
+}
+
+.big {
+  font-size: 2rem;
+}
+/*# sourceMappingURL=style.css.map */
