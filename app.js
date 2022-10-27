@@ -111,6 +111,7 @@ nextBtn.addEventListener('click', nextMusic)
 audio.addEventListener('timeupdate', progres)
 audio.addEventListener('ended', nextMusic)
 volume.addEventListener('change', changeVolume)
+//some changes
 
 
 progressContainer.addEventListener('click', setProgress)
